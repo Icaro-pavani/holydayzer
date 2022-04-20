@@ -1,5 +1,5 @@
 # Holydayzer
 
-## Introduction 
+## Introduction
 
-An API that returns the holydays through the year.
+An API that returns the holidays through the year.
