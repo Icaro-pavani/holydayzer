@@ -36,6 +36,15 @@ function holydayzer() {
     res.send(answer);
   });
 
+  app.get("/holidays/:idMonth", (req, res) => {
+    const month = req.params.idMonth;
+    const monthHolidays = holidays.filter((holiday) => {
+      const holidayMonth = holiday.date.split("/")[0];
+      return Number(month) === Number(holidayMonth);
+    });
+    res.send(monthHolidays);
+  });
+
   app.listen(5000, () => console.log(today.toLocaleDateString()));
 }
 
