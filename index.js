@@ -45,7 +45,7 @@ function holydayzer() {
     res.send(monthHolidays);
   });
 
-  app.listen(5000, () => console.log(today.toLocaleDateString()));
+  app.listen(5000, () => console.log("API running..."));
 }
 
 holydayzer();
